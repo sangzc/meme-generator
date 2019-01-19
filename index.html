@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meme Generator</title>
+    <!-- FONTS: placing before the stylesheet so the fonts are available when the css loads -->
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One|Passion+One|Righteous" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="main-container">
+
+    <div id="memes-container">
+        <!-- This is what the meme HTML will look like when it's added to the DOM  -->
+            <div class="meme-box">
+                <div class="overlay">X</div>
+                <img class="meme-img" src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
+                <p class="top-text">hello</p>
+                <p class="bot-text">goodbye</p>
+            </div> 
+       
+    </div>
+
+    <div id="input-container">
+        <form id="meme-form">
+                <h1></h1>
+                <div><span id="h1-content"><b>Meme Generator</b></span></div>
+                <p class="inputs">
+                    <!-- <label for="img_url">Image URL:</label> -->
+                    <input id="img-url" type="text" name="img_url" placeholder="Image URL">
+                </p>
+                <p class="inputs">
+                    <!-- <label for="top_text">Top:</label> -->
+                    <input id="top-text" type="text" name="top_text" placeholder="Top Text" maxlength="22">
+                </p>
+                <p class="inputs">
+                    <!-- <label for="bot_text">Bottom:</label> -->
+                    <input id="bot-text" type="text" name="bot_text" placeholder="Bottom Text" maxlength="22">
+                </p>
+                <input id="submit-button" type="submit">
+       </form>
+    </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
